@@ -9,5 +9,8 @@ cc_library(
 cc_test(
     name = "library_test",
     srcs = ["library_test.cc"],
-    deps = [":library"],
+    deps = [
+        #":library",
+        "@com_google_googletest//:gtest_main",
+    ],
 )
